@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --pink: #FA8CB1;
+    --softPink: #FDC4CA;
+    --creme: #FFFEE7;
+    --softBrown: #CFB698;
+    --darkBrown: #9E6D4D;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--creme);
+}
+
+header, footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: var(--darkBrown);
+    z-index: 10;
+}
+
+.titulo-fundo {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+}
+    
+
+
+.titulo {
+  font-family: "MonteCarlo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  color: var(--softPink);
+}
+
+.circulos-header{
+    position: absolute;
+    inset: 0; 
+    z-index: 2;
+}
+
+.circulo-header, .circulo-footer{
+    position: absolute; 
+    width: 350px;
+    height: 300px;
+    background-color: var(--darkBrown);
+    border-radius: 50%;
+}
+
+
+.circulo-header:nth-child(1) {
+    bottom: -100px; 
+    left: -1%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-header:nth-child(2) {
+    bottom: -100px; 
+    left: 20%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-header:nth-child(3) {
+    bottom: -100px; 
+    left: 41%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-header:nth-child(4) {
+    bottom: -100px;
+    right: 15%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-header:nth-child(5) {
+    bottom: -100px; 
+    right: -6%;
+    background-color: var(--darkBrown);
+} 
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.receita-supresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--softPink);
+    width: 100%;
+    max-width: 1320px;
+    height: 370px;
+    border-radius: 50px;
+    margin: 15% auto 25% auto;
+}
+
+.container-imagem {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-escolhida {
+    width: 100%; 
+    max-width: 360px; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+.receita-escolhida {
+    flex: 1;
+    padding: 50px;
+}
+.texto-receita-escolhida{
+  font-family: "MonteCarlo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: var(--creme);
+}
+
+.receitas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.receita{
+    display: flex;
+    width: 1320px;
+    height: 370px;
+    border-radius: 50px;
+    background-color: var(--softPink);
+    border: dashed 3px var(--pink);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.imagem-receita{
+    width: 300px;
+    height: 270px;
+}
+.titulo-receita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    width: 780px;
+    height: 150px;
+    border-radius: 30px;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--creme);
+}
+
+.circulos-footer{
+    margin-top: 15%;
+}
+
+.circulo-footer:nth-child(1) { 
+    bottom: 100px;
+    left: -1%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-footer:nth-child(2) {
+    bottom: 100px;
+    left: 20%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-footer:nth-child(3) {
+    bottom: 100px;
+    left: 41%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-footer:nth-child(4) {
+    bottom: 100px;
+    right: 15%;
+    background-color: var(--darkBrown);
+}
+
+.circulo-footer:nth-child(5) {
+    bottom: 100px;
+    right: -6%;
+    background-color: var(--darkBrown);
+} 
+
